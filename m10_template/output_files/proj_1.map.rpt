@@ -1,0 +1,1189 @@
+Analysis & Synthesis report for proj_1
+Thu Jun 07 10:14:25 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Jun 07 10:14:22 2018           ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
+; Revision Name                      ; proj_1                                          ;
+; Top-level Entity Name              ; MAX10_top                                       ;
+; Family                             ; MAX 10                                          ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 217                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
+; UFM blocks                         ; 0                                               ;
+; ADC blocks                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08DAF484C8GES   ;                    ;
+; Top-level entity name                                                      ; MAX10_top          ; proj_1             ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; m_src/mx10_top.v                 ; yes             ; User Verilog HDL File  ; D:/Github/hello2/m10_template/m_src/mx10_top.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+
+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+;                                             ;                    ;
+; Total combinational functions               ; 0                  ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 0                  ;
+;     -- 3 input functions                    ; 0                  ;
+;     -- <=2 input functions                  ; 0                  ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 0                  ;
+;     -- arithmetic mode                      ; 0                  ;
+;                                             ;                    ;
+; Total registers                             ; 0                  ;
+;     -- Dedicated logic registers            ; 0                  ;
+;     -- I/O registers                        ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 217                ;
+;                                             ;                    ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; ADT7420_SCL~output ;
+; Maximum fan-out                             ; 1                  ;
+; Total fan-out                               ; 372                ;
+; Average fan-out                             ; 0.63               ;
++---------------------------------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |MAX10_top                 ; 0 (0)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 217  ; 0            ; 0          ; |MAX10_top          ; MAX10_top   ; work         ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 217                         ;
+; cycloneiii_io_obuf    ; 155                         ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Thu Jun 07 10:14:03 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proj_1 -c proj_1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file m_src/mx10_top.v
+    Info (12023): Found entity 1: MAX10_top File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 13
+Info (12127): Elaborating entity "MAX10_top" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at mx10_top.v(245): truncated value with size 32 to match size of target (26) File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 245
+Warning (10230): Verilog HDL assignment warning at mx10_top.v(252): truncated value with size 32 to match size of target (4) File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 252
+Warning (10230): Verilog HDL assignment warning at mx10_top.v(255): truncated value with size 32 to match size of target (1) File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 255
+Warning (10034): Output port "SDRAM_A" at mx10_top.v(40) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+Warning (10034): Output port "SDRAM_BA" at mx10_top.v(41) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 41
+Warning (10034): Output port "USER_LED" at mx10_top.v(65) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+Warning (10034): Output port "AD5681R_LDACn" at mx10_top.v(19) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 19
+Warning (10034): Output port "AD5681R_RSTn" at mx10_top.v(20) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 20
+Warning (10034): Output port "AD5681R_SCL" at mx10_top.v(21) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 21
+Warning (10034): Output port "AD5681R_SDA" at mx10_top.v(22) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 22
+Warning (10034): Output port "AD5681R_SYNCn" at mx10_top.v(23) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 23
+Warning (10034): Output port "ADXL362_CS" at mx10_top.v(32) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 32
+Warning (10034): Output port "ADXL362_MOSI" at mx10_top.v(36) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 36
+Warning (10034): Output port "ADXL362_SCLK" at mx10_top.v(37) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 37
+Warning (10034): Output port "SDRAM_CASn" at mx10_top.v(42) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 42
+Warning (10034): Output port "SDRAM_CKE" at mx10_top.v(43) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 43
+Warning (10034): Output port "SDRAM_CLK" at mx10_top.v(44) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 44
+Warning (10034): Output port "SDRAM_CSn" at mx10_top.v(45) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 45
+Warning (10034): Output port "SDRAM_DQMH" at mx10_top.v(47) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 47
+Warning (10034): Output port "SDRAM_DQML" at mx10_top.v(48) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 48
+Warning (10034): Output port "SDRAM_RASn" at mx10_top.v(49) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 49
+Warning (10034): Output port "SDRAM_WEn" at mx10_top.v(50) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 50
+Warning (10034): Output port "RESET_EXPn" at mx10_top.v(124) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 124
+Warning (12158): Entity "MAX10_top" contains only dangling pins
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "ADT7420_SCL" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 28
+    Warning (13040): bidirectional pin "ADT7420_SDA" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 29
+    Warning (13040): bidirectional pin "SDRAM_DQ[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[4]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[5]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[6]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[7]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[8]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[9]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[10]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[11]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[12]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[13]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[14]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SDRAM_DQ[15]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13040): bidirectional pin "SFLASH_DATA" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 55
+    Warning (13040): bidirectional pin "SFLASH_DCLK" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 56
+    Warning (13040): bidirectional pin "EG_P1" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 68
+    Warning (13040): bidirectional pin "EG_P10" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 69
+    Warning (13040): bidirectional pin "EG_P11" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 70
+    Warning (13040): bidirectional pin "EG_P12" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 71
+    Warning (13040): bidirectional pin "EG_P13" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 72
+    Warning (13040): bidirectional pin "EG_P14" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 73
+    Warning (13040): bidirectional pin "EG_P15" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 74
+    Warning (13040): bidirectional pin "EG_P16" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 75
+    Warning (13040): bidirectional pin "EG_P17" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 76
+    Warning (13040): bidirectional pin "EG_P18" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 77
+    Warning (13040): bidirectional pin "EG_P19" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 78
+    Warning (13040): bidirectional pin "EG_P2" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 79
+    Warning (13040): bidirectional pin "EG_P20" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 80
+    Warning (13040): bidirectional pin "EG_P21" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 81
+    Warning (13040): bidirectional pin "EG_P22" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 82
+    Warning (13040): bidirectional pin "EG_P23" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 83
+    Warning (13040): bidirectional pin "EG_P24" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 84
+    Warning (13040): bidirectional pin "EG_P25" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 85
+    Warning (13040): bidirectional pin "EG_P26" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 86
+    Warning (13040): bidirectional pin "EG_P27" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 87
+    Warning (13040): bidirectional pin "EG_P28" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 88
+    Warning (13040): bidirectional pin "EG_P29" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 89
+    Warning (13040): bidirectional pin "EG_P3" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 90
+    Warning (13040): bidirectional pin "EG_P35" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 91
+    Warning (13040): bidirectional pin "EG_P36" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 92
+    Warning (13040): bidirectional pin "EG_P37" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 93
+    Warning (13040): bidirectional pin "EG_P38" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 94
+    Warning (13040): bidirectional pin "EG_P39" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 95
+    Warning (13040): bidirectional pin "EG_P4" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 96
+    Warning (13040): bidirectional pin "EG_P40" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 97
+    Warning (13040): bidirectional pin "EG_P41" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 98
+    Warning (13040): bidirectional pin "EG_P42" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 99
+    Warning (13040): bidirectional pin "EG_P43" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 100
+    Warning (13040): bidirectional pin "EG_P44" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 101
+    Warning (13040): bidirectional pin "EG_P45" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 102
+    Warning (13040): bidirectional pin "EG_P46" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 103
+    Warning (13040): bidirectional pin "EG_P47" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 104
+    Warning (13040): bidirectional pin "EG_P48" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 105
+    Warning (13040): bidirectional pin "EG_P49" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 106
+    Warning (13040): bidirectional pin "EG_P5" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 107
+    Warning (13040): bidirectional pin "EG_P50" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 108
+    Warning (13040): bidirectional pin "EG_P51" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 109
+    Warning (13040): bidirectional pin "EG_P52" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 110
+    Warning (13040): bidirectional pin "EG_P53" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 111
+    Warning (13040): bidirectional pin "EG_P54" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 112
+    Warning (13040): bidirectional pin "EG_P55" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 113
+    Warning (13040): bidirectional pin "EG_P56" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 114
+    Warning (13040): bidirectional pin "EG_P57" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 115
+    Warning (13040): bidirectional pin "EG_P58" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 116
+    Warning (13040): bidirectional pin "EG_P59" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 117
+    Warning (13040): bidirectional pin "EG_P6" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 118
+    Warning (13040): bidirectional pin "EG_P60" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 119
+    Warning (13040): bidirectional pin "EG_P7" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 120
+    Warning (13040): bidirectional pin "EG_P8" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 121
+    Warning (13040): bidirectional pin "EG_P9" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO_01" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 127
+    Warning (13040): bidirectional pin "GPIO_02" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 128
+    Warning (13040): bidirectional pin "GPIO_03" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 129
+    Warning (13040): bidirectional pin "GPIO_04" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 130
+    Warning (13040): bidirectional pin "GPIO_05" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 131
+    Warning (13040): bidirectional pin "GPIO_06" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 132
+    Warning (13040): bidirectional pin "GPIO_07" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 133
+    Warning (13040): bidirectional pin "GPIO_08" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 134
+    Warning (13040): bidirectional pin "GPIO_09" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 135
+    Warning (13040): bidirectional pin "GPIO_10" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 136
+    Warning (13040): bidirectional pin "GPIO_11" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 137
+    Warning (13040): bidirectional pin "GPIO_12" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 138
+    Warning (13040): bidirectional pin "GPIO_A" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 139
+    Warning (13040): bidirectional pin "GPIO_B" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 140
+    Warning (13040): bidirectional pin "I2C_SCL" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 141
+    Warning (13040): bidirectional pin "I2C_SDA" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 142
+    Warning (13040): bidirectional pin "GPIO_J3_15" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 149
+    Warning (13040): bidirectional pin "GPIO_J3_16" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 150
+    Warning (13040): bidirectional pin "GPIO_J3_17" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 151
+    Warning (13040): bidirectional pin "GPIO_J3_18" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 152
+    Warning (13040): bidirectional pin "GPIO_J3_19" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 153
+    Warning (13040): bidirectional pin "GPIO_J3_20" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 154
+    Warning (13040): bidirectional pin "GPIO_J3_21" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 155
+    Warning (13040): bidirectional pin "GPIO_J3_22" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 156
+    Warning (13040): bidirectional pin "GPIO_J3_23" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 157
+    Warning (13040): bidirectional pin "GPIO_J3_24" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 158
+    Warning (13040): bidirectional pin "GPIO_J3_25" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 159
+    Warning (13040): bidirectional pin "GPIO_J3_26" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 160
+    Warning (13040): bidirectional pin "GPIO_J3_27" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 161
+    Warning (13040): bidirectional pin "GPIO_J3_28" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 162
+    Warning (13040): bidirectional pin "GPIO_J3_31" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 163
+    Warning (13040): bidirectional pin "GPIO_J3_32" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 164
+    Warning (13040): bidirectional pin "GPIO_J3_33" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 165
+    Warning (13040): bidirectional pin "GPIO_J3_34" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 166
+    Warning (13040): bidirectional pin "GPIO_J3_35" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 167
+    Warning (13040): bidirectional pin "GPIO_J3_36" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 168
+    Warning (13040): bidirectional pin "GPIO_J3_37" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 169
+    Warning (13040): bidirectional pin "GPIO_J3_38" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 170
+    Warning (13040): bidirectional pin "GPIO_J3_39" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 171
+    Warning (13040): bidirectional pin "GPIO_J3_40" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 172
+    Warning (13040): bidirectional pin "GPIO_J4_11" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 178
+    Warning (13040): bidirectional pin "GPIO_J4_12" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 179
+    Warning (13040): bidirectional pin "GPIO_J4_13" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 180
+    Warning (13040): bidirectional pin "GPIO_J4_14" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 181
+    Warning (13040): bidirectional pin "GPIO_J4_15" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 182
+    Warning (13040): bidirectional pin "GPIO_J4_16" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 183
+    Warning (13040): bidirectional pin "GPIO_J4_19" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 184
+    Warning (13040): bidirectional pin "GPIO_J4_20" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 185
+    Warning (13040): bidirectional pin "GPIO_J4_21" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 186
+    Warning (13040): bidirectional pin "GPIO_J4_22" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 187
+    Warning (13040): bidirectional pin "GPIO_J4_23" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 188
+    Warning (13040): bidirectional pin "GPIO_J4_24" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 189
+    Warning (13040): bidirectional pin "GPIO_J4_27" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 190
+    Warning (13040): bidirectional pin "GPIO_J4_28" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 191
+    Warning (13040): bidirectional pin "GPIO_J4_29" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 192
+    Warning (13040): bidirectional pin "GPIO_J4_30" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 193
+    Warning (13040): bidirectional pin "GPIO_J4_31" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 194
+    Warning (13040): bidirectional pin "GPIO_J4_32" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 195
+    Warning (13040): bidirectional pin "GPIO_J4_35" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 196
+    Warning (13040): bidirectional pin "GPIO_J4_36" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 197
+    Warning (13040): bidirectional pin "GPIO_J4_37" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 198
+    Warning (13040): bidirectional pin "GPIO_J4_38" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 199
+    Warning (13040): bidirectional pin "GPIO_J4_39" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 200
+    Warning (13040): bidirectional pin "GPIO_J4_40" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 201
+    Warning (13040): bidirectional pin "PMOD_A[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
+    Warning (13040): bidirectional pin "PMOD_A[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
+    Warning (13040): bidirectional pin "PMOD_A[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
+    Warning (13040): bidirectional pin "PMOD_A[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
+    Warning (13040): bidirectional pin "PMOD_B[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
+    Warning (13040): bidirectional pin "PMOD_B[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
+    Warning (13040): bidirectional pin "PMOD_B[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
+    Warning (13040): bidirectional pin "PMOD_B[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
+    Warning (13040): bidirectional pin "PMOD_C[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_C[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_C[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_C[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_D[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_D[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_D[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_D[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "AD5681R_LDACn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 19
+    Warning (13410): Pin "AD5681R_RSTn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 20
+    Warning (13410): Pin "AD5681R_SCL" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 21
+    Warning (13410): Pin "AD5681R_SDA" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 22
+    Warning (13410): Pin "AD5681R_SYNCn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 23
+    Warning (13410): Pin "ADXL362_CS" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 32
+    Warning (13410): Pin "ADXL362_MOSI" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 36
+    Warning (13410): Pin "ADXL362_SCLK" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 37
+    Warning (13410): Pin "SDRAM_A[0]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[1]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[2]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[3]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[4]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[5]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[6]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[7]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[8]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[9]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[10]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[11]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_A[12]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
+    Warning (13410): Pin "SDRAM_BA[0]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 41
+    Warning (13410): Pin "SDRAM_BA[1]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 41
+    Warning (13410): Pin "SDRAM_CASn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_CKE" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 43
+    Warning (13410): Pin "SDRAM_CLK" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 44
+    Warning (13410): Pin "SDRAM_CSn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 45
+    Warning (13410): Pin "SDRAM_DQMH" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 47
+    Warning (13410): Pin "SDRAM_DQML" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13410): Pin "SDRAM_RASn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 49
+    Warning (13410): Pin "SDRAM_WEn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 50
+    Warning (13410): Pin "USER_LED[1]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[2]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[3]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[4]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[5]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[6]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[7]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "USER_LED[8]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
+    Warning (13410): Pin "RESET_EXPn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 124
+Warning (20013): Ignored 661 assignments for entity "MAX10_ur_reg_top" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to PB[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to PB[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to PB[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to PB[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to USER_LED[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "ur_debug_top:ur_debug_u|ur_txrx_v2r1:ur_u1|clk16x" -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AD5681R_LDACn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AD5681R_RSTn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AD5681R_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AD5681R_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AD5681R_SYNCn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADT7420_CT -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADT7420_INT -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADT7420_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADT7420_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADXL362_CS -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADXL362_INT1 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADXL362_INT2 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADXL362_MISO -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADXL362_MOSI -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to ADXL362_SCLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AIN[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P1 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P10 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P13 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P14 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P17 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P18 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P2 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P25 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P26 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P29 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P3 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P4 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P41 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P42 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P43 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P44 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P45 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P46 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P47 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P48 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P49 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P5 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P50 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P51 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P52 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P53 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P54 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P55 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P56 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P57 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P58 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P59 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P6 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P60 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P7 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P8 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EG_P9 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to EXP_PRESENT -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_01 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_02 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_03 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_04 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_05 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_06 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_07 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_08 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_09 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_10 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_A -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_B -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_17 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_18 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_25 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_26 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_31 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_32 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_33 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_34 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J3_40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_13 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_14 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_29 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_30 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_31 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_32 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to GPIO_J4_40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to I2C_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to I2C_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PB[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PB[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PB[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PB[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_A[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_A[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_A[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_A[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_B[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_B[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_B[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_B[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_C[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_C[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_C[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_C[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_D[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_D[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_D[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to PMOD_D[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to RESET_EXPn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[10] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[11] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[12] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_A[9] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_BA[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_BA[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_CASn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_CKE -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_CSn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQMH -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQML -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[10] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[11] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[12] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[13] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[14] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[15] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_DQ[9] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_RASn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SDRAM_WEn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SFLASH_ASDI -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SFLASH_CSn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SFLASH_DATA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SFLASH_DCLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SYS_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to USER_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to USER_LED[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADT7420_CT -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADT7420_INT -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADT7420_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADT7420_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADXL362_CS -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADXL362_INT1 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADXL362_INT2 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADXL362_MISO -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADXL362_MOSI -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ADXL362_SCLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to AIN[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P1 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P10 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P13 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P14 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P17 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P18 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P2 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P25 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P26 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P29 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P3 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P4 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P41 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P42 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P43 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P44 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P45 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P46 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P47 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P48 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P49 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P5 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P50 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P51 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P52 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P53 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P54 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P55 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P56 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P57 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P58 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P59 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P6 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P60 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P7 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P8 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EG_P9 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to EXP_PRESENT -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_01 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_02 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_03 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_04 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_05 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_06 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_07 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_08 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_09 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_10 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_A -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_B -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_17 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_18 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_25 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_26 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_31 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_32 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_33 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_34 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J3_40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_13 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_14 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_29 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_30 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_31 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_32 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_J4_40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to I2C_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to I2C_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PB[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PB[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PB[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PB[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_A[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_A[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_A[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_A[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_B[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_B[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_B[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_B[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_C[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_C[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_C[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_C[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_D[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_D[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_D[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to PMOD_D[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to RESET_EXPn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[10] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[11] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[12] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_A[9] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_BA[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_BA[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_CASn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_CKE -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_CSn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQMH -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQML -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[10] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[11] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[12] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[13] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[14] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[15] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_DQ[9] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_RASn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SDRAM_WEn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SFLASH_ASDI -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SFLASH_CSn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SFLASH_DATA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SFLASH_DCLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to SYS_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to USER_LED[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to AD5681R_LDACn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to AD5681R_RSTn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to AD5681R_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to AD5681R_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to AD5681R_SYNCn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to ADT7420_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to ADT7420_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to ADXL362_CS -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to ADXL362_MOSI -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to ADXL362_SCLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P1 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P10 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P13 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P14 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P17 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P18 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P2 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P25 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P26 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P29 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P3 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P4 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P41 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P42 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P43 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P44 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P45 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P46 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P47 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P48 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P49 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P5 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P50 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P51 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P52 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P53 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P54 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P55 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P56 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P57 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P58 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P59 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P6 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P60 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P7 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P8 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to EG_P9 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_01 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_02 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_03 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_04 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_05 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_06 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_07 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_08 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_09 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_10 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_A -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_B -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_17 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_18 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_25 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_26 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_31 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_32 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_33 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_34 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J3_40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_11 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_12 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_13 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_14 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_15 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_16 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_19 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_20 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_21 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_22 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_23 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_24 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_27 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_28 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_29 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_30 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_31 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_32 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_35 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_36 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_37 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_38 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_39 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to GPIO_J4_40 -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to I2C_SCL -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to I2C_SDA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_A[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_A[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_A[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_A[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_B[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_B[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_B[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_B[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_C[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_C[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_C[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_C[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_D[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_D[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_D[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to PMOD_D[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to RESET_EXPn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[10] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[11] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[12] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_A[9] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_BA[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_BA[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_CASn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_CKE -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_CLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_CSn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQMH -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQML -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[0] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[10] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[11] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[12] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[13] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[14] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[15] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_DQ[9] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_RASn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SDRAM_WEn -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SFLASH_DATA -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 2 -to SFLASH_DCLK -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[1] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[2] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[3] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[4] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[5] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[6] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[7] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name SLEW_RATE 0 -to USER_LED[8] -entity MAX10_ur_reg_top was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity MAX10_ur_reg_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity MAX10_ur_reg_top -section_id Top was ignored
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 22 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SYS_CLK" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 15
+    Warning (15610): No output dependent on input pin "USER_CLK" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 16
+    Warning (15610): No output dependent on input pin "ADT7420_CT" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 26
+    Warning (15610): No output dependent on input pin "ADT7420_INT" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 27
+    Warning (15610): No output dependent on input pin "ADXL362_INT1" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 33
+    Warning (15610): No output dependent on input pin "ADXL362_INT2" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 34
+    Warning (15610): No output dependent on input pin "ADXL362_MISO" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 35
+    Warning (15610): No output dependent on input pin "SFLASH_ASDI" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 53
+    Warning (15610): No output dependent on input pin "SFLASH_CSn" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 54
+    Warning (15610): No output dependent on input pin "AIN[0]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[1]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[2]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[3]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[4]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[5]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[6]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "AIN[7]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
+    Warning (15610): No output dependent on input pin "PB[1]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
+    Warning (15610): No output dependent on input pin "PB[2]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
+    Warning (15610): No output dependent on input pin "PB[3]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
+    Warning (15610): No output dependent on input pin "PB[4]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
+    Warning (15610): No output dependent on input pin "EXP_PRESENT" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 123
+Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21060): Implemented 155 bidirectional pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 907 warnings
+    Info: Peak virtual memory: 842 megabytes
+    Info: Processing ended: Thu Jun 07 10:14:29 2018
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:26
+
+
