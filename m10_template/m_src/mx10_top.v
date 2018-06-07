@@ -228,7 +228,7 @@ reg [7:0]	add4_reg  ;
  // assign USER_LED[8:2] = 7'b1111111 ;
 // ---- assign area
   assign rst = ~PB[1] | post ;
-  
+    assign USER_LED[8:5] = PB[4:1] ;
 //------------
 
  //----------------------
