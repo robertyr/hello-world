@@ -9,6 +9,7 @@
 
 /* The signals below are documented in the "BeMicro MAX 10 Getting Started    */
 /* User Guide."  Please refer to that document for additional signal details. */
+// tst1
 
 module  MAX10_top (
 	/* Clock inputs, SYS_CLK = 50MHz, USER_CLK = 24MHz */
