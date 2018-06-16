@@ -1,5 +1,5 @@
 Fitter report for proj_1
-Thu Jun 07 10:15:04 2018
+Fri Jun 15 16:28:28 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
@@ -63,7 +63,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Jun 07 10:15:04 2018           ;
+; Fitter Status                      ; Successful - Fri Jun 15 16:28:26 2018           ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
 ; Revision Name                      ; proj_1                                          ;
 ; Top-level Entity Name              ; MAX10_top                                       ;
@@ -211,10 +211,6 @@ agreement for further details.
 ; AIN[5]        ; Incomplete set of assignments ;
 ; AIN[6]        ; Incomplete set of assignments ;
 ; AIN[7]        ; Incomplete set of assignments ;
-; PB[1]         ; Incomplete set of assignments ;
-; PB[2]         ; Incomplete set of assignments ;
-; PB[3]         ; Incomplete set of assignments ;
-; PB[4]         ; Incomplete set of assignments ;
 ; USER_LED[1]   ; Incomplete set of assignments ;
 ; USER_LED[2]   ; Incomplete set of assignments ;
 ; USER_LED[3]   ; Incomplete set of assignments ;
@@ -380,6 +376,10 @@ agreement for further details.
 ; PMOD_D[1]     ; Incomplete set of assignments ;
 ; PMOD_D[2]     ; Incomplete set of assignments ;
 ; PMOD_D[3]     ; Incomplete set of assignments ;
+; PB[1]         ; Incomplete set of assignments ;
+; PB[2]         ; Incomplete set of assignments ;
+; PB[3]         ; Incomplete set of assignments ;
+; PB[4]         ; Incomplete set of assignments ;
 +---------------+-------------------------------+
 
 
@@ -421,7 +421,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Github/hello2/m10_template/output_files/proj_1.pin.
+The pin-out file can be found in D:/Github/hello3/hello-world/m10_template/output_files/proj_1.pin.
 
 
 +-------------------------------------------------------------------+
@@ -467,11 +467,11 @@ The pin-out file can be found in D:/Github/hello2/m10_template/output_files/proj
 ; CRC blocks                                  ; 0 / 1 ( 0 % )       ;
 ; Remote update blocks                        ; 0 / 1 ( 0 % )       ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )       ;
-; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%  ;
+; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.1%  ;
 ; Peak interconnect usage (total/H/V)         ; 0.1% / 0.1% / 0.1%  ;
 ; Maximum fan-out                             ; 10                  ;
 ; Highest non-global fan-out                  ; 10                  ;
-; Total fan-out                               ; 382                 ;
+; Total fan-out                               ; 386                 ;
 ; Average fan-out                             ; 0.63                ;
 +---------------------------------------------+---------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -521,7 +521,7 @@ The pin-out file can be found in D:/Github/hello2/m10_template/output_files/proj
 ;     -- Registered Output Connections        ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Internal Connections                        ;                    ;                                ;
-;     -- Total Connections                    ; 382                ; 8                              ;
+;     -- Total Connections                    ; 386                ; 8                              ;
 ;     -- Registered Connections               ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; External Connections                        ;                    ;                                ;
@@ -568,10 +568,10 @@ The pin-out file can be found in D:/Github/hello2/m10_template/output_files/proj
 ; AIN[6]       ; J9    ; 1A       ; 10           ; 21           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; AIN[7]       ; F3    ; 1A       ; 10           ; 21           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; EXP_PRESENT  ; R5    ; 2        ; 0            ; 4            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; PB[1]        ; M1    ; 2        ; 0            ; 5            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; PB[2]        ; R1    ; 2        ; 0            ; 2            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; PB[3]        ; V5    ; 3        ; 3            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; PB[4]        ; AB5   ; 3        ; 13           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; PB[1]        ; M1    ; 2        ; 0            ; 5            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; PB[2]        ; R1    ; 2        ; 0            ; 2            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; PB[3]        ; V5    ; 3        ; 3            ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; PB[4]        ; AB5   ; 3        ; 13           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SFLASH_ASDI  ; R11   ; 3        ; 17           ; 0            ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SFLASH_CSn   ; R10   ; 3        ; 11           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SYS_CLK      ; N14   ; 6        ; 31           ; 9            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
@@ -1380,10 +1380,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AIN[5]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; AIN[6]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; AIN[7]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; PB[1]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; PB[2]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; PB[3]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; PB[4]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; USER_LED[1]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; USER_LED[2]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; USER_LED[3]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -1549,192 +1545,200 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PMOD_D[1]     ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; PMOD_D[2]     ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; PMOD_D[3]     ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; PB[1]         ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
+; PB[2]         ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; PB[3]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; PB[4]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------+
-; Pad To Core Delay Chain Fanout                    ;
-+---------------------+-------------------+---------+
-; Source Pin / Fanout ; Pad To Core Index ; Setting ;
-+---------------------+-------------------+---------+
-; SYS_CLK             ;                   ;         ;
-; USER_CLK            ;                   ;         ;
-; ADT7420_CT          ;                   ;         ;
-; ADT7420_INT         ;                   ;         ;
-; ADXL362_INT1        ;                   ;         ;
-; ADXL362_INT2        ;                   ;         ;
-; ADXL362_MISO        ;                   ;         ;
-; SFLASH_ASDI         ;                   ;         ;
-; SFLASH_CSn          ;                   ;         ;
-; AIN[0]              ;                   ;         ;
-; AIN[1]              ;                   ;         ;
-; AIN[2]              ;                   ;         ;
-; AIN[3]              ;                   ;         ;
-; AIN[4]              ;                   ;         ;
-; AIN[5]              ;                   ;         ;
-; AIN[6]              ;                   ;         ;
-; AIN[7]              ;                   ;         ;
-; PB[1]               ;                   ;         ;
-; PB[2]               ;                   ;         ;
-; PB[3]               ;                   ;         ;
-; PB[4]               ;                   ;         ;
-; EXP_PRESENT         ;                   ;         ;
-; ADT7420_SCL         ;                   ;         ;
-; ADT7420_SDA         ;                   ;         ;
-; SDRAM_DQ[0]         ;                   ;         ;
-; SDRAM_DQ[1]         ;                   ;         ;
-; SDRAM_DQ[2]         ;                   ;         ;
-; SDRAM_DQ[3]         ;                   ;         ;
-; SDRAM_DQ[4]         ;                   ;         ;
-; SDRAM_DQ[5]         ;                   ;         ;
-; SDRAM_DQ[6]         ;                   ;         ;
-; SDRAM_DQ[7]         ;                   ;         ;
-; SDRAM_DQ[8]         ;                   ;         ;
-; SDRAM_DQ[9]         ;                   ;         ;
-; SDRAM_DQ[10]        ;                   ;         ;
-; SDRAM_DQ[11]        ;                   ;         ;
-; SDRAM_DQ[12]        ;                   ;         ;
-; SDRAM_DQ[13]        ;                   ;         ;
-; SDRAM_DQ[14]        ;                   ;         ;
-; SDRAM_DQ[15]        ;                   ;         ;
-; SFLASH_DATA         ;                   ;         ;
-; SFLASH_DCLK         ;                   ;         ;
-; EG_P1               ;                   ;         ;
-; EG_P10              ;                   ;         ;
-; EG_P11              ;                   ;         ;
-; EG_P12              ;                   ;         ;
-; EG_P13              ;                   ;         ;
-; EG_P14              ;                   ;         ;
-; EG_P15              ;                   ;         ;
-; EG_P16              ;                   ;         ;
-; EG_P17              ;                   ;         ;
-; EG_P18              ;                   ;         ;
-; EG_P19              ;                   ;         ;
-; EG_P2               ;                   ;         ;
-; EG_P20              ;                   ;         ;
-; EG_P21              ;                   ;         ;
-; EG_P22              ;                   ;         ;
-; EG_P23              ;                   ;         ;
-; EG_P24              ;                   ;         ;
-; EG_P25              ;                   ;         ;
-; EG_P26              ;                   ;         ;
-; EG_P27              ;                   ;         ;
-; EG_P28              ;                   ;         ;
-; EG_P29              ;                   ;         ;
-; EG_P3               ;                   ;         ;
-; EG_P35              ;                   ;         ;
-; EG_P36              ;                   ;         ;
-; EG_P37              ;                   ;         ;
-; EG_P38              ;                   ;         ;
-; EG_P39              ;                   ;         ;
-; EG_P4               ;                   ;         ;
-; EG_P40              ;                   ;         ;
-; EG_P41              ;                   ;         ;
-; EG_P42              ;                   ;         ;
-; EG_P43              ;                   ;         ;
-; EG_P44              ;                   ;         ;
-; EG_P45              ;                   ;         ;
-; EG_P46              ;                   ;         ;
-; EG_P47              ;                   ;         ;
-; EG_P48              ;                   ;         ;
-; EG_P49              ;                   ;         ;
-; EG_P5               ;                   ;         ;
-; EG_P50              ;                   ;         ;
-; EG_P51              ;                   ;         ;
-; EG_P52              ;                   ;         ;
-; EG_P53              ;                   ;         ;
-; EG_P54              ;                   ;         ;
-; EG_P55              ;                   ;         ;
-; EG_P56              ;                   ;         ;
-; EG_P57              ;                   ;         ;
-; EG_P58              ;                   ;         ;
-; EG_P59              ;                   ;         ;
-; EG_P6               ;                   ;         ;
-; EG_P60              ;                   ;         ;
-; EG_P7               ;                   ;         ;
-; EG_P8               ;                   ;         ;
-; EG_P9               ;                   ;         ;
-; GPIO_01             ;                   ;         ;
-; GPIO_02             ;                   ;         ;
-; GPIO_03             ;                   ;         ;
-; GPIO_04             ;                   ;         ;
-; GPIO_05             ;                   ;         ;
-; GPIO_06             ;                   ;         ;
-; GPIO_07             ;                   ;         ;
-; GPIO_08             ;                   ;         ;
-; GPIO_09             ;                   ;         ;
-; GPIO_10             ;                   ;         ;
-; GPIO_11             ;                   ;         ;
-; GPIO_12             ;                   ;         ;
-; GPIO_A              ;                   ;         ;
-; GPIO_B              ;                   ;         ;
-; I2C_SCL             ;                   ;         ;
-; I2C_SDA             ;                   ;         ;
-; GPIO_J3_15          ;                   ;         ;
-; GPIO_J3_16          ;                   ;         ;
-; GPIO_J3_17          ;                   ;         ;
-; GPIO_J3_18          ;                   ;         ;
-; GPIO_J3_19          ;                   ;         ;
-; GPIO_J3_20          ;                   ;         ;
-; GPIO_J3_21          ;                   ;         ;
-; GPIO_J3_22          ;                   ;         ;
-; GPIO_J3_23          ;                   ;         ;
-; GPIO_J3_24          ;                   ;         ;
-; GPIO_J3_25          ;                   ;         ;
-; GPIO_J3_26          ;                   ;         ;
-; GPIO_J3_27          ;                   ;         ;
-; GPIO_J3_28          ;                   ;         ;
-; GPIO_J3_31          ;                   ;         ;
-; GPIO_J3_32          ;                   ;         ;
-; GPIO_J3_33          ;                   ;         ;
-; GPIO_J3_34          ;                   ;         ;
-; GPIO_J3_35          ;                   ;         ;
-; GPIO_J3_36          ;                   ;         ;
-; GPIO_J3_37          ;                   ;         ;
-; GPIO_J3_38          ;                   ;         ;
-; GPIO_J3_39          ;                   ;         ;
-; GPIO_J3_40          ;                   ;         ;
-; GPIO_J4_11          ;                   ;         ;
-; GPIO_J4_12          ;                   ;         ;
-; GPIO_J4_13          ;                   ;         ;
-; GPIO_J4_14          ;                   ;         ;
-; GPIO_J4_15          ;                   ;         ;
-; GPIO_J4_16          ;                   ;         ;
-; GPIO_J4_19          ;                   ;         ;
-; GPIO_J4_20          ;                   ;         ;
-; GPIO_J4_21          ;                   ;         ;
-; GPIO_J4_22          ;                   ;         ;
-; GPIO_J4_23          ;                   ;         ;
-; GPIO_J4_24          ;                   ;         ;
-; GPIO_J4_27          ;                   ;         ;
-; GPIO_J4_28          ;                   ;         ;
-; GPIO_J4_29          ;                   ;         ;
-; GPIO_J4_30          ;                   ;         ;
-; GPIO_J4_31          ;                   ;         ;
-; GPIO_J4_32          ;                   ;         ;
-; GPIO_J4_35          ;                   ;         ;
-; GPIO_J4_36          ;                   ;         ;
-; GPIO_J4_37          ;                   ;         ;
-; GPIO_J4_38          ;                   ;         ;
-; GPIO_J4_39          ;                   ;         ;
-; GPIO_J4_40          ;                   ;         ;
-; PMOD_A[0]           ;                   ;         ;
-; PMOD_A[1]           ;                   ;         ;
-; PMOD_A[2]           ;                   ;         ;
-; PMOD_A[3]           ;                   ;         ;
-; PMOD_B[0]           ;                   ;         ;
-; PMOD_B[1]           ;                   ;         ;
-; PMOD_B[2]           ;                   ;         ;
-; PMOD_B[3]           ;                   ;         ;
-; PMOD_C[0]           ;                   ;         ;
-; PMOD_C[1]           ;                   ;         ;
-; PMOD_C[2]           ;                   ;         ;
-; PMOD_C[3]           ;                   ;         ;
-; PMOD_D[0]           ;                   ;         ;
-; PMOD_D[1]           ;                   ;         ;
-; PMOD_D[2]           ;                   ;         ;
-; PMOD_D[3]           ;                   ;         ;
-+---------------------+-------------------+---------+
++---------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                          ;
++---------------------------+-------------------+---------+
+; Source Pin / Fanout       ; Pad To Core Index ; Setting ;
++---------------------------+-------------------+---------+
+; SYS_CLK                   ;                   ;         ;
+; USER_CLK                  ;                   ;         ;
+; ADT7420_CT                ;                   ;         ;
+; ADT7420_INT               ;                   ;         ;
+; ADXL362_INT1              ;                   ;         ;
+; ADXL362_INT2              ;                   ;         ;
+; ADXL362_MISO              ;                   ;         ;
+; SFLASH_ASDI               ;                   ;         ;
+; SFLASH_CSn                ;                   ;         ;
+; AIN[0]                    ;                   ;         ;
+; AIN[1]                    ;                   ;         ;
+; AIN[2]                    ;                   ;         ;
+; AIN[3]                    ;                   ;         ;
+; AIN[4]                    ;                   ;         ;
+; AIN[5]                    ;                   ;         ;
+; AIN[6]                    ;                   ;         ;
+; AIN[7]                    ;                   ;         ;
+; EXP_PRESENT               ;                   ;         ;
+; ADT7420_SCL               ;                   ;         ;
+; ADT7420_SDA               ;                   ;         ;
+; SDRAM_DQ[0]               ;                   ;         ;
+; SDRAM_DQ[1]               ;                   ;         ;
+; SDRAM_DQ[2]               ;                   ;         ;
+; SDRAM_DQ[3]               ;                   ;         ;
+; SDRAM_DQ[4]               ;                   ;         ;
+; SDRAM_DQ[5]               ;                   ;         ;
+; SDRAM_DQ[6]               ;                   ;         ;
+; SDRAM_DQ[7]               ;                   ;         ;
+; SDRAM_DQ[8]               ;                   ;         ;
+; SDRAM_DQ[9]               ;                   ;         ;
+; SDRAM_DQ[10]              ;                   ;         ;
+; SDRAM_DQ[11]              ;                   ;         ;
+; SDRAM_DQ[12]              ;                   ;         ;
+; SDRAM_DQ[13]              ;                   ;         ;
+; SDRAM_DQ[14]              ;                   ;         ;
+; SDRAM_DQ[15]              ;                   ;         ;
+; SFLASH_DATA               ;                   ;         ;
+; SFLASH_DCLK               ;                   ;         ;
+; EG_P1                     ;                   ;         ;
+; EG_P10                    ;                   ;         ;
+; EG_P11                    ;                   ;         ;
+; EG_P12                    ;                   ;         ;
+; EG_P13                    ;                   ;         ;
+; EG_P14                    ;                   ;         ;
+; EG_P15                    ;                   ;         ;
+; EG_P16                    ;                   ;         ;
+; EG_P17                    ;                   ;         ;
+; EG_P18                    ;                   ;         ;
+; EG_P19                    ;                   ;         ;
+; EG_P2                     ;                   ;         ;
+; EG_P20                    ;                   ;         ;
+; EG_P21                    ;                   ;         ;
+; EG_P22                    ;                   ;         ;
+; EG_P23                    ;                   ;         ;
+; EG_P24                    ;                   ;         ;
+; EG_P25                    ;                   ;         ;
+; EG_P26                    ;                   ;         ;
+; EG_P27                    ;                   ;         ;
+; EG_P28                    ;                   ;         ;
+; EG_P29                    ;                   ;         ;
+; EG_P3                     ;                   ;         ;
+; EG_P35                    ;                   ;         ;
+; EG_P36                    ;                   ;         ;
+; EG_P37                    ;                   ;         ;
+; EG_P38                    ;                   ;         ;
+; EG_P39                    ;                   ;         ;
+; EG_P4                     ;                   ;         ;
+; EG_P40                    ;                   ;         ;
+; EG_P41                    ;                   ;         ;
+; EG_P42                    ;                   ;         ;
+; EG_P43                    ;                   ;         ;
+; EG_P44                    ;                   ;         ;
+; EG_P45                    ;                   ;         ;
+; EG_P46                    ;                   ;         ;
+; EG_P47                    ;                   ;         ;
+; EG_P48                    ;                   ;         ;
+; EG_P49                    ;                   ;         ;
+; EG_P5                     ;                   ;         ;
+; EG_P50                    ;                   ;         ;
+; EG_P51                    ;                   ;         ;
+; EG_P52                    ;                   ;         ;
+; EG_P53                    ;                   ;         ;
+; EG_P54                    ;                   ;         ;
+; EG_P55                    ;                   ;         ;
+; EG_P56                    ;                   ;         ;
+; EG_P57                    ;                   ;         ;
+; EG_P58                    ;                   ;         ;
+; EG_P59                    ;                   ;         ;
+; EG_P6                     ;                   ;         ;
+; EG_P60                    ;                   ;         ;
+; EG_P7                     ;                   ;         ;
+; EG_P8                     ;                   ;         ;
+; EG_P9                     ;                   ;         ;
+; GPIO_01                   ;                   ;         ;
+; GPIO_02                   ;                   ;         ;
+; GPIO_03                   ;                   ;         ;
+; GPIO_04                   ;                   ;         ;
+; GPIO_05                   ;                   ;         ;
+; GPIO_06                   ;                   ;         ;
+; GPIO_07                   ;                   ;         ;
+; GPIO_08                   ;                   ;         ;
+; GPIO_09                   ;                   ;         ;
+; GPIO_10                   ;                   ;         ;
+; GPIO_11                   ;                   ;         ;
+; GPIO_12                   ;                   ;         ;
+; GPIO_A                    ;                   ;         ;
+; GPIO_B                    ;                   ;         ;
+; I2C_SCL                   ;                   ;         ;
+; I2C_SDA                   ;                   ;         ;
+; GPIO_J3_15                ;                   ;         ;
+; GPIO_J3_16                ;                   ;         ;
+; GPIO_J3_17                ;                   ;         ;
+; GPIO_J3_18                ;                   ;         ;
+; GPIO_J3_19                ;                   ;         ;
+; GPIO_J3_20                ;                   ;         ;
+; GPIO_J3_21                ;                   ;         ;
+; GPIO_J3_22                ;                   ;         ;
+; GPIO_J3_23                ;                   ;         ;
+; GPIO_J3_24                ;                   ;         ;
+; GPIO_J3_25                ;                   ;         ;
+; GPIO_J3_26                ;                   ;         ;
+; GPIO_J3_27                ;                   ;         ;
+; GPIO_J3_28                ;                   ;         ;
+; GPIO_J3_31                ;                   ;         ;
+; GPIO_J3_32                ;                   ;         ;
+; GPIO_J3_33                ;                   ;         ;
+; GPIO_J3_34                ;                   ;         ;
+; GPIO_J3_35                ;                   ;         ;
+; GPIO_J3_36                ;                   ;         ;
+; GPIO_J3_37                ;                   ;         ;
+; GPIO_J3_38                ;                   ;         ;
+; GPIO_J3_39                ;                   ;         ;
+; GPIO_J3_40                ;                   ;         ;
+; GPIO_J4_11                ;                   ;         ;
+; GPIO_J4_12                ;                   ;         ;
+; GPIO_J4_13                ;                   ;         ;
+; GPIO_J4_14                ;                   ;         ;
+; GPIO_J4_15                ;                   ;         ;
+; GPIO_J4_16                ;                   ;         ;
+; GPIO_J4_19                ;                   ;         ;
+; GPIO_J4_20                ;                   ;         ;
+; GPIO_J4_21                ;                   ;         ;
+; GPIO_J4_22                ;                   ;         ;
+; GPIO_J4_23                ;                   ;         ;
+; GPIO_J4_24                ;                   ;         ;
+; GPIO_J4_27                ;                   ;         ;
+; GPIO_J4_28                ;                   ;         ;
+; GPIO_J4_29                ;                   ;         ;
+; GPIO_J4_30                ;                   ;         ;
+; GPIO_J4_31                ;                   ;         ;
+; GPIO_J4_32                ;                   ;         ;
+; GPIO_J4_35                ;                   ;         ;
+; GPIO_J4_36                ;                   ;         ;
+; GPIO_J4_37                ;                   ;         ;
+; GPIO_J4_38                ;                   ;         ;
+; GPIO_J4_39                ;                   ;         ;
+; GPIO_J4_40                ;                   ;         ;
+; PMOD_A[0]                 ;                   ;         ;
+; PMOD_A[1]                 ;                   ;         ;
+; PMOD_A[2]                 ;                   ;         ;
+; PMOD_A[3]                 ;                   ;         ;
+; PMOD_B[0]                 ;                   ;         ;
+; PMOD_B[1]                 ;                   ;         ;
+; PMOD_B[2]                 ;                   ;         ;
+; PMOD_B[3]                 ;                   ;         ;
+; PMOD_C[0]                 ;                   ;         ;
+; PMOD_C[1]                 ;                   ;         ;
+; PMOD_C[2]                 ;                   ;         ;
+; PMOD_C[3]                 ;                   ;         ;
+; PMOD_D[0]                 ;                   ;         ;
+; PMOD_D[1]                 ;                   ;         ;
+; PMOD_D[2]                 ;                   ;         ;
+; PMOD_D[3]                 ;                   ;         ;
+; PB[1]                     ;                   ;         ;
+;      - USER_LED[5]~output ; 1                 ; 6       ;
+; PB[2]                     ;                   ;         ;
+;      - USER_LED[6]~output ; 0                 ; 6       ;
+; PB[3]                     ;                   ;         ;
+;      - USER_LED[7]~output ; 0                 ; 6       ;
+; PB[4]                     ;                   ;         ;
+;      - USER_LED[8]~output ; 1                 ; 6       ;
++---------------------------+-------------------+---------+
 
 
 +----------------------------------------------+
@@ -1742,14 +1746,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+----------------------+
 ; Routing Resource Type ; Usage                ;
 +-----------------------+----------------------+
-; Block interconnects   ; 3 / 27,275 ( < 1 % ) ;
-; C16 interconnects     ; 1 / 1,240 ( < 1 % )  ;
-; C4 interconnects      ; 5 / 20,832 ( < 1 % ) ;
+; Block interconnects   ; 7 / 27,275 ( < 1 % ) ;
+; C16 interconnects     ; 3 / 1,240 ( < 1 % )  ;
+; C4 interconnects      ; 8 / 20,832 ( < 1 % ) ;
 ; Direct links          ; 0 / 27,275 ( 0 % )   ;
 ; Global clocks         ; 0 / 10 ( 0 % )       ;
 ; Local interconnects   ; 0 / 8,064 ( 0 % )    ;
-; R24 interconnects     ; 0 / 1,320 ( 0 % )    ;
-; R4 interconnects      ; 4 / 28,560 ( < 1 % ) ;
+; R24 interconnects     ; 1 / 1,320 ( < 1 % )  ;
+; R4 interconnects      ; 7 / 28,560 ( < 1 % ) ;
 +-----------------------+----------------------+
 
 
@@ -1906,10 +1910,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AIN[5]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; AIN[6]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; AIN[7]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; PB[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; PB[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; PB[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; PB[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; USER_LED[1]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; USER_LED[2]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; USER_LED[3]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2075,6 +2075,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PMOD_D[1]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; PMOD_D[2]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; PMOD_D[3]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; PB[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; PB[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; PB[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; PB[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -2169,7 +2173,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.01 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M08DAF484C8GES are preliminary
 Info (334004): Delay annotation completed successfully
@@ -2228,172 +2232,172 @@ Warning (14579): Pin GPIO_10 uses I/O standard 2.5 V located at A5 will have low
 Warning (14579): Pin GPIO_11 uses I/O standard 2.5 V located at B7 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin GPIO_12 uses I/O standard 2.5 V located at A6 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (169064): Following 155 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin ADT7420_SCL has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 28
-    Info (169065): Pin ADT7420_SDA has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 29
-    Info (169065): Pin SDRAM_DQ[0] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[1] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[2] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[3] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[4] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[5] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[6] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[7] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[8] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[9] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[10] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[11] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[12] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[13] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[14] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SDRAM_DQ[15] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Info (169065): Pin SFLASH_DATA has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 55
-    Info (169065): Pin SFLASH_DCLK has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 56
-    Info (169065): Pin EG_P1 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 68
-    Info (169065): Pin EG_P10 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 69
-    Info (169065): Pin EG_P11 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 70
-    Info (169065): Pin EG_P12 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 71
-    Info (169065): Pin EG_P13 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 72
-    Info (169065): Pin EG_P14 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 73
-    Info (169065): Pin EG_P15 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 74
-    Info (169065): Pin EG_P16 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 75
-    Info (169065): Pin EG_P17 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 76
-    Info (169065): Pin EG_P18 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 77
-    Info (169065): Pin EG_P19 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 78
-    Info (169065): Pin EG_P2 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 79
-    Info (169065): Pin EG_P20 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 80
-    Info (169065): Pin EG_P21 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 81
-    Info (169065): Pin EG_P22 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 82
-    Info (169065): Pin EG_P23 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 83
-    Info (169065): Pin EG_P24 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 84
-    Info (169065): Pin EG_P25 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 85
-    Info (169065): Pin EG_P26 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 86
-    Info (169065): Pin EG_P27 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 87
-    Info (169065): Pin EG_P28 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 88
-    Info (169065): Pin EG_P29 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 89
-    Info (169065): Pin EG_P3 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 90
-    Info (169065): Pin EG_P35 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 91
-    Info (169065): Pin EG_P36 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 92
-    Info (169065): Pin EG_P37 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 93
-    Info (169065): Pin EG_P38 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 94
-    Info (169065): Pin EG_P39 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 95
-    Info (169065): Pin EG_P4 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 96
-    Info (169065): Pin EG_P40 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 97
-    Info (169065): Pin EG_P41 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 98
-    Info (169065): Pin EG_P42 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 99
-    Info (169065): Pin EG_P43 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 100
-    Info (169065): Pin EG_P44 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 101
-    Info (169065): Pin EG_P45 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 102
-    Info (169065): Pin EG_P46 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 103
-    Info (169065): Pin EG_P47 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 104
-    Info (169065): Pin EG_P48 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 105
-    Info (169065): Pin EG_P49 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 106
-    Info (169065): Pin EG_P5 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 107
-    Info (169065): Pin EG_P50 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 108
-    Info (169065): Pin EG_P51 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 109
-    Info (169065): Pin EG_P52 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 110
-    Info (169065): Pin EG_P53 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 111
-    Info (169065): Pin EG_P54 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 112
-    Info (169065): Pin EG_P55 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 113
-    Info (169065): Pin EG_P56 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 114
-    Info (169065): Pin EG_P57 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 115
-    Info (169065): Pin EG_P58 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 116
-    Info (169065): Pin EG_P59 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 117
-    Info (169065): Pin EG_P6 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 118
-    Info (169065): Pin EG_P60 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 119
-    Info (169065): Pin EG_P7 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 120
-    Info (169065): Pin EG_P8 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 121
-    Info (169065): Pin EG_P9 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 122
-    Info (169065): Pin GPIO_01 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 127
-    Info (169065): Pin GPIO_02 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 128
-    Info (169065): Pin GPIO_03 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 129
-    Info (169065): Pin GPIO_04 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 130
-    Info (169065): Pin GPIO_05 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 131
-    Info (169065): Pin GPIO_06 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 132
-    Info (169065): Pin GPIO_07 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 133
-    Info (169065): Pin GPIO_08 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 134
-    Info (169065): Pin GPIO_09 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 135
-    Info (169065): Pin GPIO_10 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 136
-    Info (169065): Pin GPIO_11 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 137
-    Info (169065): Pin GPIO_12 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 138
-    Info (169065): Pin GPIO_A has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 139
-    Info (169065): Pin GPIO_B has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 140
-    Info (169065): Pin I2C_SCL has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 141
-    Info (169065): Pin I2C_SDA has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 142
-    Info (169065): Pin GPIO_J3_15 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 149
-    Info (169065): Pin GPIO_J3_16 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 150
-    Info (169065): Pin GPIO_J3_17 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 151
-    Info (169065): Pin GPIO_J3_18 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 152
-    Info (169065): Pin GPIO_J3_19 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 153
-    Info (169065): Pin GPIO_J3_20 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 154
-    Info (169065): Pin GPIO_J3_21 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 155
-    Info (169065): Pin GPIO_J3_22 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 156
-    Info (169065): Pin GPIO_J3_23 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 157
-    Info (169065): Pin GPIO_J3_24 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 158
-    Info (169065): Pin GPIO_J3_25 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 159
-    Info (169065): Pin GPIO_J3_26 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 160
-    Info (169065): Pin GPIO_J3_27 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 161
-    Info (169065): Pin GPIO_J3_28 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 162
-    Info (169065): Pin GPIO_J3_31 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 163
-    Info (169065): Pin GPIO_J3_32 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 164
-    Info (169065): Pin GPIO_J3_33 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 165
-    Info (169065): Pin GPIO_J3_34 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 166
-    Info (169065): Pin GPIO_J3_35 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 167
-    Info (169065): Pin GPIO_J3_36 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 168
-    Info (169065): Pin GPIO_J3_37 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 169
-    Info (169065): Pin GPIO_J3_38 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 170
-    Info (169065): Pin GPIO_J3_39 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 171
-    Info (169065): Pin GPIO_J3_40 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 172
-    Info (169065): Pin GPIO_J4_11 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 178
-    Info (169065): Pin GPIO_J4_12 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 179
-    Info (169065): Pin GPIO_J4_13 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 180
-    Info (169065): Pin GPIO_J4_14 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 181
-    Info (169065): Pin GPIO_J4_15 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 182
-    Info (169065): Pin GPIO_J4_16 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 183
-    Info (169065): Pin GPIO_J4_19 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 184
-    Info (169065): Pin GPIO_J4_20 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 185
-    Info (169065): Pin GPIO_J4_21 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 186
-    Info (169065): Pin GPIO_J4_22 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 187
-    Info (169065): Pin GPIO_J4_23 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 188
-    Info (169065): Pin GPIO_J4_24 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 189
-    Info (169065): Pin GPIO_J4_27 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 190
-    Info (169065): Pin GPIO_J4_28 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 191
-    Info (169065): Pin GPIO_J4_29 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 192
-    Info (169065): Pin GPIO_J4_30 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 193
-    Info (169065): Pin GPIO_J4_31 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 194
-    Info (169065): Pin GPIO_J4_32 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 195
-    Info (169065): Pin GPIO_J4_35 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 196
-    Info (169065): Pin GPIO_J4_36 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 197
-    Info (169065): Pin GPIO_J4_37 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 198
-    Info (169065): Pin GPIO_J4_38 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 199
-    Info (169065): Pin GPIO_J4_39 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 200
-    Info (169065): Pin GPIO_J4_40 has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 201
-    Info (169065): Pin PMOD_A[0] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Info (169065): Pin PMOD_A[1] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Info (169065): Pin PMOD_A[2] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Info (169065): Pin PMOD_A[3] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Info (169065): Pin PMOD_B[0] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Info (169065): Pin PMOD_B[1] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Info (169065): Pin PMOD_B[2] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Info (169065): Pin PMOD_B[3] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Info (169065): Pin PMOD_C[0] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Info (169065): Pin PMOD_C[1] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Info (169065): Pin PMOD_C[2] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Info (169065): Pin PMOD_C[3] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Info (169065): Pin PMOD_D[0] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-    Info (169065): Pin PMOD_D[1] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-    Info (169065): Pin PMOD_D[2] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-    Info (169065): Pin PMOD_D[3] has a permanently disabled output enable File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-Info (144001): Generated suppressed messages file D:/Github/hello2/m10_template/output_files/proj_1.fit.smsg
+    Info (169065): Pin ADT7420_SCL has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 30
+    Info (169065): Pin ADT7420_SDA has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 31
+    Info (169065): Pin SDRAM_DQ[0] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[1] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[2] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[3] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[4] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[5] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[6] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[7] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[8] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[9] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[10] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[11] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[12] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[13] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[14] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SDRAM_DQ[15] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Info (169065): Pin SFLASH_DATA has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 57
+    Info (169065): Pin SFLASH_DCLK has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 58
+    Info (169065): Pin EG_P1 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 70
+    Info (169065): Pin EG_P10 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 71
+    Info (169065): Pin EG_P11 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 72
+    Info (169065): Pin EG_P12 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 73
+    Info (169065): Pin EG_P13 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 74
+    Info (169065): Pin EG_P14 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 75
+    Info (169065): Pin EG_P15 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 76
+    Info (169065): Pin EG_P16 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 77
+    Info (169065): Pin EG_P17 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 78
+    Info (169065): Pin EG_P18 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 79
+    Info (169065): Pin EG_P19 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 80
+    Info (169065): Pin EG_P2 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 81
+    Info (169065): Pin EG_P20 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 82
+    Info (169065): Pin EG_P21 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 83
+    Info (169065): Pin EG_P22 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 84
+    Info (169065): Pin EG_P23 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 85
+    Info (169065): Pin EG_P24 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 86
+    Info (169065): Pin EG_P25 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 87
+    Info (169065): Pin EG_P26 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 88
+    Info (169065): Pin EG_P27 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 89
+    Info (169065): Pin EG_P28 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 90
+    Info (169065): Pin EG_P29 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 91
+    Info (169065): Pin EG_P3 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 92
+    Info (169065): Pin EG_P35 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 93
+    Info (169065): Pin EG_P36 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 94
+    Info (169065): Pin EG_P37 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 95
+    Info (169065): Pin EG_P38 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 96
+    Info (169065): Pin EG_P39 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 97
+    Info (169065): Pin EG_P4 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 98
+    Info (169065): Pin EG_P40 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 99
+    Info (169065): Pin EG_P41 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 100
+    Info (169065): Pin EG_P42 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 101
+    Info (169065): Pin EG_P43 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 102
+    Info (169065): Pin EG_P44 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 103
+    Info (169065): Pin EG_P45 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 104
+    Info (169065): Pin EG_P46 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 105
+    Info (169065): Pin EG_P47 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 106
+    Info (169065): Pin EG_P48 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 107
+    Info (169065): Pin EG_P49 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 108
+    Info (169065): Pin EG_P5 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 109
+    Info (169065): Pin EG_P50 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 110
+    Info (169065): Pin EG_P51 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 111
+    Info (169065): Pin EG_P52 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 112
+    Info (169065): Pin EG_P53 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 113
+    Info (169065): Pin EG_P54 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 114
+    Info (169065): Pin EG_P55 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 115
+    Info (169065): Pin EG_P56 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 116
+    Info (169065): Pin EG_P57 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 117
+    Info (169065): Pin EG_P58 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 118
+    Info (169065): Pin EG_P59 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 119
+    Info (169065): Pin EG_P6 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 120
+    Info (169065): Pin EG_P60 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 121
+    Info (169065): Pin EG_P7 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 122
+    Info (169065): Pin EG_P8 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 123
+    Info (169065): Pin EG_P9 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 124
+    Info (169065): Pin GPIO_01 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 129
+    Info (169065): Pin GPIO_02 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 130
+    Info (169065): Pin GPIO_03 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 131
+    Info (169065): Pin GPIO_04 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 132
+    Info (169065): Pin GPIO_05 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 133
+    Info (169065): Pin GPIO_06 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 134
+    Info (169065): Pin GPIO_07 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 135
+    Info (169065): Pin GPIO_08 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 136
+    Info (169065): Pin GPIO_09 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 137
+    Info (169065): Pin GPIO_10 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 138
+    Info (169065): Pin GPIO_11 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 139
+    Info (169065): Pin GPIO_12 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 140
+    Info (169065): Pin GPIO_A has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 141
+    Info (169065): Pin GPIO_B has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 142
+    Info (169065): Pin I2C_SCL has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 143
+    Info (169065): Pin I2C_SDA has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 144
+    Info (169065): Pin GPIO_J3_15 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 151
+    Info (169065): Pin GPIO_J3_16 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 152
+    Info (169065): Pin GPIO_J3_17 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 153
+    Info (169065): Pin GPIO_J3_18 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 154
+    Info (169065): Pin GPIO_J3_19 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 155
+    Info (169065): Pin GPIO_J3_20 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 156
+    Info (169065): Pin GPIO_J3_21 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 157
+    Info (169065): Pin GPIO_J3_22 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 158
+    Info (169065): Pin GPIO_J3_23 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 159
+    Info (169065): Pin GPIO_J3_24 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 160
+    Info (169065): Pin GPIO_J3_25 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 161
+    Info (169065): Pin GPIO_J3_26 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 162
+    Info (169065): Pin GPIO_J3_27 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 163
+    Info (169065): Pin GPIO_J3_28 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 164
+    Info (169065): Pin GPIO_J3_31 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 165
+    Info (169065): Pin GPIO_J3_32 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 166
+    Info (169065): Pin GPIO_J3_33 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 167
+    Info (169065): Pin GPIO_J3_34 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 168
+    Info (169065): Pin GPIO_J3_35 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 169
+    Info (169065): Pin GPIO_J3_36 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 170
+    Info (169065): Pin GPIO_J3_37 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 171
+    Info (169065): Pin GPIO_J3_38 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 172
+    Info (169065): Pin GPIO_J3_39 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 173
+    Info (169065): Pin GPIO_J3_40 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 174
+    Info (169065): Pin GPIO_J4_11 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 180
+    Info (169065): Pin GPIO_J4_12 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 181
+    Info (169065): Pin GPIO_J4_13 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 182
+    Info (169065): Pin GPIO_J4_14 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 183
+    Info (169065): Pin GPIO_J4_15 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 184
+    Info (169065): Pin GPIO_J4_16 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 185
+    Info (169065): Pin GPIO_J4_19 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 186
+    Info (169065): Pin GPIO_J4_20 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 187
+    Info (169065): Pin GPIO_J4_21 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 188
+    Info (169065): Pin GPIO_J4_22 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 189
+    Info (169065): Pin GPIO_J4_23 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 190
+    Info (169065): Pin GPIO_J4_24 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 191
+    Info (169065): Pin GPIO_J4_27 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 192
+    Info (169065): Pin GPIO_J4_28 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 193
+    Info (169065): Pin GPIO_J4_29 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 194
+    Info (169065): Pin GPIO_J4_30 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 195
+    Info (169065): Pin GPIO_J4_31 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 196
+    Info (169065): Pin GPIO_J4_32 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 197
+    Info (169065): Pin GPIO_J4_35 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 198
+    Info (169065): Pin GPIO_J4_36 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 199
+    Info (169065): Pin GPIO_J4_37 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 200
+    Info (169065): Pin GPIO_J4_38 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 201
+    Info (169065): Pin GPIO_J4_39 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 202
+    Info (169065): Pin GPIO_J4_40 has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 203
+    Info (169065): Pin PMOD_A[0] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Info (169065): Pin PMOD_A[1] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Info (169065): Pin PMOD_A[2] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Info (169065): Pin PMOD_A[3] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Info (169065): Pin PMOD_B[0] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Info (169065): Pin PMOD_B[1] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Info (169065): Pin PMOD_B[2] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Info (169065): Pin PMOD_B[3] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Info (169065): Pin PMOD_C[0] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Info (169065): Pin PMOD_C[1] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Info (169065): Pin PMOD_C[2] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Info (169065): Pin PMOD_C[3] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Info (169065): Pin PMOD_D[0] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+    Info (169065): Pin PMOD_D[1] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+    Info (169065): Pin PMOD_D[2] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+    Info (169065): Pin PMOD_D[3] has a permanently disabled output enable File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+Info (144001): Generated suppressed messages file D:/Github/hello3/hello-world/m10_template/output_files/proj_1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 1726 megabytes
-    Info: Processing ended: Thu Jun 07 10:15:15 2018
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 1734 megabytes
+    Info: Processing ended: Fri Jun 15 16:28:47 2018
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Github/hello2/m10_template/output_files/proj_1.fit.smsg.
+The suppressed messages can be found in D:/Github/hello3/hello-world/m10_template/output_files/proj_1.fit.smsg.
 
 

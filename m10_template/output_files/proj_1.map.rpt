@@ -1,5 +1,5 @@
 Analysis & Synthesis report for proj_1
-Thu Jun 07 10:14:25 2018
+Fri Jun 15 16:27:55 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 07 10:14:22 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 15 16:27:54 2018           ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
 ; Revision Name                      ; proj_1                                          ;
 ; Top-level Entity Name              ; MAX10_top                                       ;
@@ -165,13 +165,13 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
-; m_src/mx10_top.v                 ; yes             ; User Verilog HDL File  ; D:/Github/hello2/m10_template/m_src/mx10_top.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; m_src/mx10_top.v                 ; yes             ; User Verilog HDL File  ; D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -200,8 +200,8 @@ agreement for further details.
 ;                                             ;                    ;
 ; Maximum fan-out node                        ; ADT7420_SCL~output ;
 ; Maximum fan-out                             ; 1                  ;
-; Total fan-out                               ; 372                ;
-; Average fan-out                             ; 0.63               ;
+; Total fan-out                               ; 376                ;
+; Average fan-out                             ; 0.64               ;
 +---------------------------------------------+--------------------+
 
 
@@ -261,234 +261,229 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
-    Info: Processing started: Thu Jun 07 10:14:03 2018
+    Info: Processing started: Fri Jun 15 16:27:28 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proj_1 -c proj_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file m_src/mx10_top.v
-    Info (12023): Found entity 1: MAX10_top File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 13
+    Info (12023): Found entity 1: MAX10_top File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 15
 Info (12127): Elaborating entity "MAX10_top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at mx10_top.v(245): truncated value with size 32 to match size of target (26) File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 245
-Warning (10230): Verilog HDL assignment warning at mx10_top.v(252): truncated value with size 32 to match size of target (4) File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 252
-Warning (10230): Verilog HDL assignment warning at mx10_top.v(255): truncated value with size 32 to match size of target (1) File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 255
-Warning (10034): Output port "SDRAM_A" at mx10_top.v(40) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-Warning (10034): Output port "SDRAM_BA" at mx10_top.v(41) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 41
-Warning (10034): Output port "USER_LED" at mx10_top.v(65) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-Warning (10034): Output port "AD5681R_LDACn" at mx10_top.v(19) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 19
-Warning (10034): Output port "AD5681R_RSTn" at mx10_top.v(20) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 20
-Warning (10034): Output port "AD5681R_SCL" at mx10_top.v(21) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 21
-Warning (10034): Output port "AD5681R_SDA" at mx10_top.v(22) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 22
-Warning (10034): Output port "AD5681R_SYNCn" at mx10_top.v(23) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 23
-Warning (10034): Output port "ADXL362_CS" at mx10_top.v(32) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 32
-Warning (10034): Output port "ADXL362_MOSI" at mx10_top.v(36) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 36
-Warning (10034): Output port "ADXL362_SCLK" at mx10_top.v(37) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 37
-Warning (10034): Output port "SDRAM_CASn" at mx10_top.v(42) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 42
-Warning (10034): Output port "SDRAM_CKE" at mx10_top.v(43) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 43
-Warning (10034): Output port "SDRAM_CLK" at mx10_top.v(44) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 44
-Warning (10034): Output port "SDRAM_CSn" at mx10_top.v(45) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 45
-Warning (10034): Output port "SDRAM_DQMH" at mx10_top.v(47) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 47
-Warning (10034): Output port "SDRAM_DQML" at mx10_top.v(48) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 48
-Warning (10034): Output port "SDRAM_RASn" at mx10_top.v(49) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 49
-Warning (10034): Output port "SDRAM_WEn" at mx10_top.v(50) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 50
-Warning (10034): Output port "RESET_EXPn" at mx10_top.v(124) has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 124
-Warning (12158): Entity "MAX10_top" contains only dangling pins
+Warning (10230): Verilog HDL assignment warning at mx10_top.v(247): truncated value with size 32 to match size of target (26) File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 247
+Warning (10230): Verilog HDL assignment warning at mx10_top.v(254): truncated value with size 32 to match size of target (4) File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 254
+Warning (10230): Verilog HDL assignment warning at mx10_top.v(257): truncated value with size 32 to match size of target (1) File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 257
+Warning (10034): Output port "SDRAM_A" at mx10_top.v(42) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+Warning (10034): Output port "SDRAM_BA" at mx10_top.v(43) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 43
+Warning (10034): Output port "USER_LED[4..1]" at mx10_top.v(67) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 67
+Warning (10034): Output port "AD5681R_LDACn" at mx10_top.v(21) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 21
+Warning (10034): Output port "AD5681R_RSTn" at mx10_top.v(22) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 22
+Warning (10034): Output port "AD5681R_SCL" at mx10_top.v(23) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 23
+Warning (10034): Output port "AD5681R_SDA" at mx10_top.v(24) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 24
+Warning (10034): Output port "AD5681R_SYNCn" at mx10_top.v(25) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 25
+Warning (10034): Output port "ADXL362_CS" at mx10_top.v(34) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 34
+Warning (10034): Output port "ADXL362_MOSI" at mx10_top.v(38) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 38
+Warning (10034): Output port "ADXL362_SCLK" at mx10_top.v(39) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 39
+Warning (10034): Output port "SDRAM_CASn" at mx10_top.v(44) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 44
+Warning (10034): Output port "SDRAM_CKE" at mx10_top.v(45) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 45
+Warning (10034): Output port "SDRAM_CLK" at mx10_top.v(46) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 46
+Warning (10034): Output port "SDRAM_CSn" at mx10_top.v(47) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 47
+Warning (10034): Output port "SDRAM_DQMH" at mx10_top.v(49) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 49
+Warning (10034): Output port "SDRAM_DQML" at mx10_top.v(50) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 50
+Warning (10034): Output port "SDRAM_RASn" at mx10_top.v(51) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 51
+Warning (10034): Output port "SDRAM_WEn" at mx10_top.v(52) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 52
+Warning (10034): Output port "RESET_EXPn" at mx10_top.v(126) has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 126
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "ADT7420_SCL" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 28
-    Warning (13040): bidirectional pin "ADT7420_SDA" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 29
-    Warning (13040): bidirectional pin "SDRAM_DQ[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[4]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[5]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[6]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[7]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[8]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[9]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[10]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[11]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[12]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[13]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[14]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SDRAM_DQ[15]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 46
-    Warning (13040): bidirectional pin "SFLASH_DATA" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 55
-    Warning (13040): bidirectional pin "SFLASH_DCLK" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 56
-    Warning (13040): bidirectional pin "EG_P1" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 68
-    Warning (13040): bidirectional pin "EG_P10" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 69
-    Warning (13040): bidirectional pin "EG_P11" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 70
-    Warning (13040): bidirectional pin "EG_P12" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 71
-    Warning (13040): bidirectional pin "EG_P13" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 72
-    Warning (13040): bidirectional pin "EG_P14" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 73
-    Warning (13040): bidirectional pin "EG_P15" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 74
-    Warning (13040): bidirectional pin "EG_P16" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 75
-    Warning (13040): bidirectional pin "EG_P17" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 76
-    Warning (13040): bidirectional pin "EG_P18" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 77
-    Warning (13040): bidirectional pin "EG_P19" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 78
-    Warning (13040): bidirectional pin "EG_P2" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 79
-    Warning (13040): bidirectional pin "EG_P20" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 80
-    Warning (13040): bidirectional pin "EG_P21" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 81
-    Warning (13040): bidirectional pin "EG_P22" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 82
-    Warning (13040): bidirectional pin "EG_P23" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 83
-    Warning (13040): bidirectional pin "EG_P24" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 84
-    Warning (13040): bidirectional pin "EG_P25" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 85
-    Warning (13040): bidirectional pin "EG_P26" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 86
-    Warning (13040): bidirectional pin "EG_P27" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 87
-    Warning (13040): bidirectional pin "EG_P28" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 88
-    Warning (13040): bidirectional pin "EG_P29" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 89
-    Warning (13040): bidirectional pin "EG_P3" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 90
-    Warning (13040): bidirectional pin "EG_P35" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 91
-    Warning (13040): bidirectional pin "EG_P36" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 92
-    Warning (13040): bidirectional pin "EG_P37" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 93
-    Warning (13040): bidirectional pin "EG_P38" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 94
-    Warning (13040): bidirectional pin "EG_P39" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 95
-    Warning (13040): bidirectional pin "EG_P4" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 96
-    Warning (13040): bidirectional pin "EG_P40" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 97
-    Warning (13040): bidirectional pin "EG_P41" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 98
-    Warning (13040): bidirectional pin "EG_P42" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 99
-    Warning (13040): bidirectional pin "EG_P43" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 100
-    Warning (13040): bidirectional pin "EG_P44" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 101
-    Warning (13040): bidirectional pin "EG_P45" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 102
-    Warning (13040): bidirectional pin "EG_P46" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 103
-    Warning (13040): bidirectional pin "EG_P47" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 104
-    Warning (13040): bidirectional pin "EG_P48" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 105
-    Warning (13040): bidirectional pin "EG_P49" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 106
-    Warning (13040): bidirectional pin "EG_P5" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 107
-    Warning (13040): bidirectional pin "EG_P50" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 108
-    Warning (13040): bidirectional pin "EG_P51" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 109
-    Warning (13040): bidirectional pin "EG_P52" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 110
-    Warning (13040): bidirectional pin "EG_P53" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 111
-    Warning (13040): bidirectional pin "EG_P54" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 112
-    Warning (13040): bidirectional pin "EG_P55" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 113
-    Warning (13040): bidirectional pin "EG_P56" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 114
-    Warning (13040): bidirectional pin "EG_P57" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 115
-    Warning (13040): bidirectional pin "EG_P58" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 116
-    Warning (13040): bidirectional pin "EG_P59" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 117
-    Warning (13040): bidirectional pin "EG_P6" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 118
-    Warning (13040): bidirectional pin "EG_P60" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 119
-    Warning (13040): bidirectional pin "EG_P7" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 120
-    Warning (13040): bidirectional pin "EG_P8" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 121
-    Warning (13040): bidirectional pin "EG_P9" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO_01" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 127
-    Warning (13040): bidirectional pin "GPIO_02" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 128
-    Warning (13040): bidirectional pin "GPIO_03" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 129
-    Warning (13040): bidirectional pin "GPIO_04" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 130
-    Warning (13040): bidirectional pin "GPIO_05" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 131
-    Warning (13040): bidirectional pin "GPIO_06" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 132
-    Warning (13040): bidirectional pin "GPIO_07" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 133
-    Warning (13040): bidirectional pin "GPIO_08" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 134
-    Warning (13040): bidirectional pin "GPIO_09" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 135
-    Warning (13040): bidirectional pin "GPIO_10" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 136
-    Warning (13040): bidirectional pin "GPIO_11" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 137
-    Warning (13040): bidirectional pin "GPIO_12" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 138
-    Warning (13040): bidirectional pin "GPIO_A" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 139
-    Warning (13040): bidirectional pin "GPIO_B" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 140
-    Warning (13040): bidirectional pin "I2C_SCL" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 141
-    Warning (13040): bidirectional pin "I2C_SDA" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 142
-    Warning (13040): bidirectional pin "GPIO_J3_15" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 149
-    Warning (13040): bidirectional pin "GPIO_J3_16" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 150
-    Warning (13040): bidirectional pin "GPIO_J3_17" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 151
-    Warning (13040): bidirectional pin "GPIO_J3_18" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 152
-    Warning (13040): bidirectional pin "GPIO_J3_19" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 153
-    Warning (13040): bidirectional pin "GPIO_J3_20" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 154
-    Warning (13040): bidirectional pin "GPIO_J3_21" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 155
-    Warning (13040): bidirectional pin "GPIO_J3_22" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 156
-    Warning (13040): bidirectional pin "GPIO_J3_23" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 157
-    Warning (13040): bidirectional pin "GPIO_J3_24" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 158
-    Warning (13040): bidirectional pin "GPIO_J3_25" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 159
-    Warning (13040): bidirectional pin "GPIO_J3_26" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 160
-    Warning (13040): bidirectional pin "GPIO_J3_27" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 161
-    Warning (13040): bidirectional pin "GPIO_J3_28" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 162
-    Warning (13040): bidirectional pin "GPIO_J3_31" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 163
-    Warning (13040): bidirectional pin "GPIO_J3_32" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 164
-    Warning (13040): bidirectional pin "GPIO_J3_33" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 165
-    Warning (13040): bidirectional pin "GPIO_J3_34" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 166
-    Warning (13040): bidirectional pin "GPIO_J3_35" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 167
-    Warning (13040): bidirectional pin "GPIO_J3_36" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 168
-    Warning (13040): bidirectional pin "GPIO_J3_37" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 169
-    Warning (13040): bidirectional pin "GPIO_J3_38" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 170
-    Warning (13040): bidirectional pin "GPIO_J3_39" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 171
-    Warning (13040): bidirectional pin "GPIO_J3_40" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 172
-    Warning (13040): bidirectional pin "GPIO_J4_11" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 178
-    Warning (13040): bidirectional pin "GPIO_J4_12" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 179
-    Warning (13040): bidirectional pin "GPIO_J4_13" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 180
-    Warning (13040): bidirectional pin "GPIO_J4_14" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 181
-    Warning (13040): bidirectional pin "GPIO_J4_15" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 182
-    Warning (13040): bidirectional pin "GPIO_J4_16" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 183
-    Warning (13040): bidirectional pin "GPIO_J4_19" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 184
-    Warning (13040): bidirectional pin "GPIO_J4_20" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 185
-    Warning (13040): bidirectional pin "GPIO_J4_21" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 186
-    Warning (13040): bidirectional pin "GPIO_J4_22" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 187
-    Warning (13040): bidirectional pin "GPIO_J4_23" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 188
-    Warning (13040): bidirectional pin "GPIO_J4_24" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 189
-    Warning (13040): bidirectional pin "GPIO_J4_27" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 190
-    Warning (13040): bidirectional pin "GPIO_J4_28" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 191
-    Warning (13040): bidirectional pin "GPIO_J4_29" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 192
-    Warning (13040): bidirectional pin "GPIO_J4_30" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 193
-    Warning (13040): bidirectional pin "GPIO_J4_31" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 194
-    Warning (13040): bidirectional pin "GPIO_J4_32" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 195
-    Warning (13040): bidirectional pin "GPIO_J4_35" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 196
-    Warning (13040): bidirectional pin "GPIO_J4_36" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 197
-    Warning (13040): bidirectional pin "GPIO_J4_37" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 198
-    Warning (13040): bidirectional pin "GPIO_J4_38" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 199
-    Warning (13040): bidirectional pin "GPIO_J4_39" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 200
-    Warning (13040): bidirectional pin "GPIO_J4_40" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 201
-    Warning (13040): bidirectional pin "PMOD_A[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Warning (13040): bidirectional pin "PMOD_A[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Warning (13040): bidirectional pin "PMOD_A[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Warning (13040): bidirectional pin "PMOD_A[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 204
-    Warning (13040): bidirectional pin "PMOD_B[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Warning (13040): bidirectional pin "PMOD_B[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Warning (13040): bidirectional pin "PMOD_B[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Warning (13040): bidirectional pin "PMOD_B[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 205
-    Warning (13040): bidirectional pin "PMOD_C[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Warning (13040): bidirectional pin "PMOD_C[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Warning (13040): bidirectional pin "PMOD_C[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Warning (13040): bidirectional pin "PMOD_C[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 206
-    Warning (13040): bidirectional pin "PMOD_D[0]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-    Warning (13040): bidirectional pin "PMOD_D[1]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-    Warning (13040): bidirectional pin "PMOD_D[2]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
-    Warning (13040): bidirectional pin "PMOD_D[3]" has no driver File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "ADT7420_SCL" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 30
+    Warning (13040): bidirectional pin "ADT7420_SDA" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 31
+    Warning (13040): bidirectional pin "SDRAM_DQ[0]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[1]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[2]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[3]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[4]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[5]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[6]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[7]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[8]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[9]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[10]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[11]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[12]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[13]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[14]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SDRAM_DQ[15]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 48
+    Warning (13040): bidirectional pin "SFLASH_DATA" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 57
+    Warning (13040): bidirectional pin "SFLASH_DCLK" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 58
+    Warning (13040): bidirectional pin "EG_P1" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 70
+    Warning (13040): bidirectional pin "EG_P10" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 71
+    Warning (13040): bidirectional pin "EG_P11" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 72
+    Warning (13040): bidirectional pin "EG_P12" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 73
+    Warning (13040): bidirectional pin "EG_P13" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 74
+    Warning (13040): bidirectional pin "EG_P14" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 75
+    Warning (13040): bidirectional pin "EG_P15" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 76
+    Warning (13040): bidirectional pin "EG_P16" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 77
+    Warning (13040): bidirectional pin "EG_P17" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 78
+    Warning (13040): bidirectional pin "EG_P18" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 79
+    Warning (13040): bidirectional pin "EG_P19" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 80
+    Warning (13040): bidirectional pin "EG_P2" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 81
+    Warning (13040): bidirectional pin "EG_P20" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 82
+    Warning (13040): bidirectional pin "EG_P21" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 83
+    Warning (13040): bidirectional pin "EG_P22" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 84
+    Warning (13040): bidirectional pin "EG_P23" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 85
+    Warning (13040): bidirectional pin "EG_P24" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 86
+    Warning (13040): bidirectional pin "EG_P25" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 87
+    Warning (13040): bidirectional pin "EG_P26" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 88
+    Warning (13040): bidirectional pin "EG_P27" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 89
+    Warning (13040): bidirectional pin "EG_P28" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 90
+    Warning (13040): bidirectional pin "EG_P29" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 91
+    Warning (13040): bidirectional pin "EG_P3" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 92
+    Warning (13040): bidirectional pin "EG_P35" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 93
+    Warning (13040): bidirectional pin "EG_P36" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 94
+    Warning (13040): bidirectional pin "EG_P37" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 95
+    Warning (13040): bidirectional pin "EG_P38" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 96
+    Warning (13040): bidirectional pin "EG_P39" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 97
+    Warning (13040): bidirectional pin "EG_P4" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 98
+    Warning (13040): bidirectional pin "EG_P40" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 99
+    Warning (13040): bidirectional pin "EG_P41" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 100
+    Warning (13040): bidirectional pin "EG_P42" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 101
+    Warning (13040): bidirectional pin "EG_P43" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 102
+    Warning (13040): bidirectional pin "EG_P44" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 103
+    Warning (13040): bidirectional pin "EG_P45" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 104
+    Warning (13040): bidirectional pin "EG_P46" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 105
+    Warning (13040): bidirectional pin "EG_P47" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 106
+    Warning (13040): bidirectional pin "EG_P48" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 107
+    Warning (13040): bidirectional pin "EG_P49" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 108
+    Warning (13040): bidirectional pin "EG_P5" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 109
+    Warning (13040): bidirectional pin "EG_P50" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 110
+    Warning (13040): bidirectional pin "EG_P51" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 111
+    Warning (13040): bidirectional pin "EG_P52" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 112
+    Warning (13040): bidirectional pin "EG_P53" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 113
+    Warning (13040): bidirectional pin "EG_P54" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 114
+    Warning (13040): bidirectional pin "EG_P55" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 115
+    Warning (13040): bidirectional pin "EG_P56" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 116
+    Warning (13040): bidirectional pin "EG_P57" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 117
+    Warning (13040): bidirectional pin "EG_P58" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 118
+    Warning (13040): bidirectional pin "EG_P59" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 119
+    Warning (13040): bidirectional pin "EG_P6" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 120
+    Warning (13040): bidirectional pin "EG_P60" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 121
+    Warning (13040): bidirectional pin "EG_P7" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 122
+    Warning (13040): bidirectional pin "EG_P8" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 123
+    Warning (13040): bidirectional pin "EG_P9" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 124
+    Warning (13040): bidirectional pin "GPIO_01" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 129
+    Warning (13040): bidirectional pin "GPIO_02" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 130
+    Warning (13040): bidirectional pin "GPIO_03" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 131
+    Warning (13040): bidirectional pin "GPIO_04" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 132
+    Warning (13040): bidirectional pin "GPIO_05" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 133
+    Warning (13040): bidirectional pin "GPIO_06" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 134
+    Warning (13040): bidirectional pin "GPIO_07" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 135
+    Warning (13040): bidirectional pin "GPIO_08" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 136
+    Warning (13040): bidirectional pin "GPIO_09" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 137
+    Warning (13040): bidirectional pin "GPIO_10" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 138
+    Warning (13040): bidirectional pin "GPIO_11" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 139
+    Warning (13040): bidirectional pin "GPIO_12" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 140
+    Warning (13040): bidirectional pin "GPIO_A" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 141
+    Warning (13040): bidirectional pin "GPIO_B" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 142
+    Warning (13040): bidirectional pin "I2C_SCL" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 143
+    Warning (13040): bidirectional pin "I2C_SDA" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 144
+    Warning (13040): bidirectional pin "GPIO_J3_15" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 151
+    Warning (13040): bidirectional pin "GPIO_J3_16" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 152
+    Warning (13040): bidirectional pin "GPIO_J3_17" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 153
+    Warning (13040): bidirectional pin "GPIO_J3_18" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 154
+    Warning (13040): bidirectional pin "GPIO_J3_19" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 155
+    Warning (13040): bidirectional pin "GPIO_J3_20" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 156
+    Warning (13040): bidirectional pin "GPIO_J3_21" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 157
+    Warning (13040): bidirectional pin "GPIO_J3_22" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 158
+    Warning (13040): bidirectional pin "GPIO_J3_23" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 159
+    Warning (13040): bidirectional pin "GPIO_J3_24" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 160
+    Warning (13040): bidirectional pin "GPIO_J3_25" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 161
+    Warning (13040): bidirectional pin "GPIO_J3_26" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 162
+    Warning (13040): bidirectional pin "GPIO_J3_27" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 163
+    Warning (13040): bidirectional pin "GPIO_J3_28" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 164
+    Warning (13040): bidirectional pin "GPIO_J3_31" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 165
+    Warning (13040): bidirectional pin "GPIO_J3_32" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 166
+    Warning (13040): bidirectional pin "GPIO_J3_33" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 167
+    Warning (13040): bidirectional pin "GPIO_J3_34" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 168
+    Warning (13040): bidirectional pin "GPIO_J3_35" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 169
+    Warning (13040): bidirectional pin "GPIO_J3_36" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 170
+    Warning (13040): bidirectional pin "GPIO_J3_37" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 171
+    Warning (13040): bidirectional pin "GPIO_J3_38" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 172
+    Warning (13040): bidirectional pin "GPIO_J3_39" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 173
+    Warning (13040): bidirectional pin "GPIO_J3_40" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 174
+    Warning (13040): bidirectional pin "GPIO_J4_11" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 180
+    Warning (13040): bidirectional pin "GPIO_J4_12" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 181
+    Warning (13040): bidirectional pin "GPIO_J4_13" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 182
+    Warning (13040): bidirectional pin "GPIO_J4_14" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 183
+    Warning (13040): bidirectional pin "GPIO_J4_15" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 184
+    Warning (13040): bidirectional pin "GPIO_J4_16" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 185
+    Warning (13040): bidirectional pin "GPIO_J4_19" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 186
+    Warning (13040): bidirectional pin "GPIO_J4_20" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 187
+    Warning (13040): bidirectional pin "GPIO_J4_21" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 188
+    Warning (13040): bidirectional pin "GPIO_J4_22" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 189
+    Warning (13040): bidirectional pin "GPIO_J4_23" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 190
+    Warning (13040): bidirectional pin "GPIO_J4_24" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 191
+    Warning (13040): bidirectional pin "GPIO_J4_27" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 192
+    Warning (13040): bidirectional pin "GPIO_J4_28" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 193
+    Warning (13040): bidirectional pin "GPIO_J4_29" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 194
+    Warning (13040): bidirectional pin "GPIO_J4_30" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 195
+    Warning (13040): bidirectional pin "GPIO_J4_31" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 196
+    Warning (13040): bidirectional pin "GPIO_J4_32" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 197
+    Warning (13040): bidirectional pin "GPIO_J4_35" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 198
+    Warning (13040): bidirectional pin "GPIO_J4_36" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 199
+    Warning (13040): bidirectional pin "GPIO_J4_37" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 200
+    Warning (13040): bidirectional pin "GPIO_J4_38" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 201
+    Warning (13040): bidirectional pin "GPIO_J4_39" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 202
+    Warning (13040): bidirectional pin "GPIO_J4_40" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 203
+    Warning (13040): bidirectional pin "PMOD_A[0]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_A[1]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_A[2]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_A[3]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 206
+    Warning (13040): bidirectional pin "PMOD_B[0]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Warning (13040): bidirectional pin "PMOD_B[1]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Warning (13040): bidirectional pin "PMOD_B[2]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Warning (13040): bidirectional pin "PMOD_B[3]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 207
+    Warning (13040): bidirectional pin "PMOD_C[0]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_C[1]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_C[2]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_C[3]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 208
+    Warning (13040): bidirectional pin "PMOD_D[0]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+    Warning (13040): bidirectional pin "PMOD_D[1]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+    Warning (13040): bidirectional pin "PMOD_D[2]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
+    Warning (13040): bidirectional pin "PMOD_D[3]" has no driver File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 210
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "AD5681R_LDACn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 19
-    Warning (13410): Pin "AD5681R_RSTn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 20
-    Warning (13410): Pin "AD5681R_SCL" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 21
-    Warning (13410): Pin "AD5681R_SDA" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 22
-    Warning (13410): Pin "AD5681R_SYNCn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 23
-    Warning (13410): Pin "ADXL362_CS" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 32
-    Warning (13410): Pin "ADXL362_MOSI" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 36
-    Warning (13410): Pin "ADXL362_SCLK" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 37
-    Warning (13410): Pin "SDRAM_A[0]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[1]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[2]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[3]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[4]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[5]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[6]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[7]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[8]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[9]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[10]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[11]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_A[12]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 40
-    Warning (13410): Pin "SDRAM_BA[0]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 41
-    Warning (13410): Pin "SDRAM_BA[1]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 41
-    Warning (13410): Pin "SDRAM_CASn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 42
-    Warning (13410): Pin "SDRAM_CKE" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 43
-    Warning (13410): Pin "SDRAM_CLK" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 44
-    Warning (13410): Pin "SDRAM_CSn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 45
-    Warning (13410): Pin "SDRAM_DQMH" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 47
-    Warning (13410): Pin "SDRAM_DQML" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 48
-    Warning (13410): Pin "SDRAM_RASn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 49
-    Warning (13410): Pin "SDRAM_WEn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 50
-    Warning (13410): Pin "USER_LED[1]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[2]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[3]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[4]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[5]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[6]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[7]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "USER_LED[8]" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 65
-    Warning (13410): Pin "RESET_EXPn" is stuck at GND File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 124
+    Warning (13410): Pin "AD5681R_LDACn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 21
+    Warning (13410): Pin "AD5681R_RSTn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 22
+    Warning (13410): Pin "AD5681R_SCL" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 23
+    Warning (13410): Pin "AD5681R_SDA" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 24
+    Warning (13410): Pin "AD5681R_SYNCn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 25
+    Warning (13410): Pin "ADXL362_CS" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 34
+    Warning (13410): Pin "ADXL362_MOSI" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 38
+    Warning (13410): Pin "ADXL362_SCLK" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 39
+    Warning (13410): Pin "SDRAM_A[0]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[1]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[2]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[3]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[4]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[5]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[6]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[7]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[8]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[9]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[10]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[11]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_A[12]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 42
+    Warning (13410): Pin "SDRAM_BA[0]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 43
+    Warning (13410): Pin "SDRAM_BA[1]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 43
+    Warning (13410): Pin "SDRAM_CASn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 44
+    Warning (13410): Pin "SDRAM_CKE" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 45
+    Warning (13410): Pin "SDRAM_CLK" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 46
+    Warning (13410): Pin "SDRAM_CSn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 47
+    Warning (13410): Pin "SDRAM_DQMH" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 49
+    Warning (13410): Pin "SDRAM_DQML" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 50
+    Warning (13410): Pin "SDRAM_RASn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 51
+    Warning (13410): Pin "SDRAM_WEn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 52
+    Warning (13410): Pin "USER_LED[1]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 67
+    Warning (13410): Pin "USER_LED[2]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 67
+    Warning (13410): Pin "USER_LED[3]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 67
+    Warning (13410): Pin "USER_LED[4]" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 67
+    Warning (13410): Pin "RESET_EXPn" is stuck at GND File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 126
 Warning (20013): Ignored 661 assignments for entity "MAX10_ur_reg_top" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to PB[1] -entity MAX10_ur_reg_top was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to PB[2] -entity MAX10_ur_reg_top was ignored
@@ -1153,37 +1148,33 @@ Warning (20013): Ignored 661 assignments for entity "MAX10_ur_reg_top" -- entity
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity MAX10_ur_reg_top -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 22 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SYS_CLK" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 15
-    Warning (15610): No output dependent on input pin "USER_CLK" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 16
-    Warning (15610): No output dependent on input pin "ADT7420_CT" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 26
-    Warning (15610): No output dependent on input pin "ADT7420_INT" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 27
-    Warning (15610): No output dependent on input pin "ADXL362_INT1" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 33
-    Warning (15610): No output dependent on input pin "ADXL362_INT2" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 34
-    Warning (15610): No output dependent on input pin "ADXL362_MISO" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 35
-    Warning (15610): No output dependent on input pin "SFLASH_ASDI" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 53
-    Warning (15610): No output dependent on input pin "SFLASH_CSn" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 54
-    Warning (15610): No output dependent on input pin "AIN[0]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[1]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[2]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[3]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[4]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[5]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[6]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "AIN[7]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 59
-    Warning (15610): No output dependent on input pin "PB[1]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
-    Warning (15610): No output dependent on input pin "PB[2]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
-    Warning (15610): No output dependent on input pin "PB[3]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
-    Warning (15610): No output dependent on input pin "PB[4]" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 62
-    Warning (15610): No output dependent on input pin "EXP_PRESENT" File: D:/Github/hello2/m10_template/m_src/mx10_top.v Line: 123
+Warning (21074): Design contains 18 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SYS_CLK" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 17
+    Warning (15610): No output dependent on input pin "USER_CLK" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 18
+    Warning (15610): No output dependent on input pin "ADT7420_CT" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 28
+    Warning (15610): No output dependent on input pin "ADT7420_INT" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 29
+    Warning (15610): No output dependent on input pin "ADXL362_INT1" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 35
+    Warning (15610): No output dependent on input pin "ADXL362_INT2" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 36
+    Warning (15610): No output dependent on input pin "ADXL362_MISO" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 37
+    Warning (15610): No output dependent on input pin "SFLASH_ASDI" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 55
+    Warning (15610): No output dependent on input pin "SFLASH_CSn" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 56
+    Warning (15610): No output dependent on input pin "AIN[0]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[1]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[2]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[3]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[4]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[5]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[6]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "AIN[7]" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 61
+    Warning (15610): No output dependent on input pin "EXP_PRESENT" File: D:/Github/hello3/hello-world/m10_template/m_src/mx10_top.v Line: 125
 Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 22 input pins
     Info (21059): Implemented 40 output pins
     Info (21060): Implemented 155 bidirectional pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 907 warnings
-    Info: Peak virtual memory: 842 megabytes
-    Info: Processing ended: Thu Jun 07 10:14:29 2018
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 898 warnings
+    Info: Peak virtual memory: 833 megabytes
+    Info: Processing ended: Fri Jun 15 16:27:57 2018
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:27
 
 
