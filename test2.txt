@@ -1,6 +1,5 @@
 This is a test file.
  
- test2
+master test2
+ goto tb0.1 
  
-tag2-2
- v002
