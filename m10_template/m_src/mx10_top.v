@@ -11,6 +11,7 @@
 /* User Guide."  Please refer to that document for additional signal details. */
 // tst1
 // tst2
+// 2019/6/21 4:31
 
 module  MAX10_top (
 	/* Clock inputs, SYS_CLK = 50MHz, USER_CLK = 24MHz */
